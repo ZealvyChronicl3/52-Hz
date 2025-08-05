@@ -1,0 +1,104 @@
+@font-face {
+    font-family: InknutAntiqua-Regular;
+    src: url(fonts/InknutAntiqua-Regular.ttf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: InknutAntiqua-Bold;
+    src: url(fonts/InknutAntiqua-Bold.ttf);
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: Mitr-Regular;
+    src: url(fonts/Mitr-Regular.ttf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: Mitr-Bold;
+    src: url(fonts/Mitr-Bold.ttf);
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: Bungee-Regular;
+    src: url(fonts/Bungee-Regular.ttf);
+    font-weight: 400;
+}
+
+p {
+    font-size: x-large;
+}
+
+.bg1 {
+    background-image: url(pictures/bg.svg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    max-height: 1795vh;
+    width: 100vw;
+}
+
+/* nav bar */
+.navbar-custom {
+    background-color: rgba(13, 13, 13, 0.7);
+}
+
+.nav-link {
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: rgb(255, 230, 0) !important;
+    /* สีข้อความเมื่อ hover */
+    border-radius: 5px;
+}
+
+/* title */
+.title {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.title-one {
+    text-shadow: 2px 2px 6px rgba(255, 255, 255, 0.6);
+    -webkit-text-stroke: 3px white;
+}
+
+.title-two {
+    padding-right: 7%;
+}
+
+.floating-whale {
+    z-index: 999;
+    animation: floatWhale 4s ease-in-out infinite;
+    pointer-events: none;
+    /* ไม่รบกวนการคลิก */
+}
+
+@keyframes floatWhale {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+/* เนื้อหา */
+h2 {
+    font-family: Bungee-Regular;
+    display: flex;
+    justify-content: center;
+}
